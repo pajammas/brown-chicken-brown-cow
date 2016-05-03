@@ -12,3 +12,6 @@ ImageId_testHist.mat
 
 
 Note: the provided scripts are the only modified ones among the development kit scripts.
+
+
+I am currently working on incorporating the linear SVM classifier
