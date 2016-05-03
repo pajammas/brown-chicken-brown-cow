@@ -17,7 +17,7 @@ VOCopts.localdir=[cwd '/local/'];
 % initialize the test set
 
 VOCopts.testset='val'; % use validation data for development test set
-%VOCopts.testset='test'; % use test set for final challenge
+% VOCopts.testset='test'; % use test set for final challenge
 
 % initialize paths
 
@@ -31,11 +31,13 @@ VOCopts.detrespath=[VOCopts.resdir '%s_det_' VOCopts.testset '_%s.txt'];
 % initialize the VOC challenge options
 
 VOCopts.classes={'bicycle','bus','car','cat','cow','dog',...
-                 'horse','motorbike','person','sheep'};
-VOCopts.nclasses=length(VOCopts.classes);	
+                'horse','motorbike','person','sheep'};
+% VOCopts.classes={'bus'};
 
+VOCopts.nclasses=length(VOCopts.classes);
 VOCopts.minoverlap=0.5;
 
 % initialize example options
 
 VOCopts.exfdpath=[VOCopts.localdir '%s_fd.mat'];
+VOCopts.testResult=[VOCopts.localdir 'testResult/' '%s_testHist.mat'];
